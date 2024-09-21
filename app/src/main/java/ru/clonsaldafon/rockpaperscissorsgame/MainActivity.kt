@@ -1,5 +1,6 @@
 package ru.clonsaldafon.rockpaperscissorsgame
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -36,12 +37,22 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun play(value: String) {
+    private fun play(userChoice: String) {
         val intent = Intent(this, ResultActivity::class.java).apply {
+            val computerChoice = computerChoose()
+
             val bundle = Bundle()
-            bundle.putString(ResultActivity.KEY, value)
+            bundle.putString(ResultActivity.USER_KEY, userChoice)
+            bundle.putString(ResultActivity.COMPUTER_KEY, computerChoice)
             putExtras(bundle)
         }
+
         startActivity(intent)
     }
+
+    private fun computerChoose(): String = listOf(
+            getString(R.string.rock_text),
+            getString(R.string.scissors_text),
+            getString(R.string.paper_text)
+        ).random()
 }

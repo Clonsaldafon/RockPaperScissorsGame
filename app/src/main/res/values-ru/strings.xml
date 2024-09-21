@@ -4,4 +4,6 @@
     <string name="rock_text">Камень</string>
     <string name="scissors_text">Ножницы</string>
     <string name="paper_text">Бумага</string>
+    <string name="you">Вы:</string>
+    <string name="computer">ПК:</string>
 </resources>

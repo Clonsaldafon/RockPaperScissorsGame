@@ -3,4 +3,6 @@
     <string name="rock_text">Rock</string>
     <string name="scissors_text">Scissors</string>
     <string name="paper_text">Paper</string>
+    <string name="you">You:</string>
+    <string name="computer">PC:</string>
 </resources>
