@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RockPaperScissorsGame</string>
+    <string name="rock_text">Камень</string>
+    <string name="scissors_text">Ножницы</string>
+    <string name="paper_text">Бумага</string>
+</resources>
