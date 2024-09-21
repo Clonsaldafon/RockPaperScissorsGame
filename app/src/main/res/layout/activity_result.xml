@@ -16,13 +16,15 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/you" />
+            android:text="@string/you"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/text_user_choice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/rock_text"
+            android:textSize="20sp"
             android:layout_marginStart="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -31,6 +33,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,14 +43,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/computer" />
+            android:text="@string/computer"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/text_computer_choice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/rock_text"
             android:layout_marginStart="8dp"
+            android:text="@string/rock_text"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -55,5 +60,13 @@
 
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/text_winner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

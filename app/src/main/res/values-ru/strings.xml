@@ -6,4 +6,7 @@
     <string name="paper_text">Бумага</string>
     <string name="you">Вы:</string>
     <string name="computer">ПК:</string>
+    <string name="you_win">Вы выиграли!</string>
+    <string name="computer_win">ПК победил!</string>
+    <string name="draw">Ничья!</string>
 </resources>

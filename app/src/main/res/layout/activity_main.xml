@@ -19,21 +19,27 @@
 
         <Button
             android:id="@+id/button_rock"
-            android:layout_width="120dp"
+            android:backgroundTint="@color/black"
+            android:textSize="18sp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="@string/rock_text" />
 
         <Button
             android:id="@+id/button_scissors"
             android:layout_marginTop="10dp"
-            android:layout_width="120dp"
+            android:backgroundTint="@color/black"
+            android:textSize="18sp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="@string/scissors_text" />
 
         <Button
             android:id="@+id/button_paper"
             android:layout_marginTop="10dp"
-            android:layout_width="120dp"
+            android:backgroundTint="@color/black"
+            android:textSize="18sp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="@string/paper_text" />
 

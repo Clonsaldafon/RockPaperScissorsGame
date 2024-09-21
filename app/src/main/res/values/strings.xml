@@ -5,4 +5,7 @@
     <string name="paper_text">Paper</string>
     <string name="you">You:</string>
     <string name="computer">PC:</string>
+    <string name="you_win">You\'re winner!</string>
+    <string name="computer_win">PC win!</string>
+    <string name="draw">Draw!</string>
 </resources>
