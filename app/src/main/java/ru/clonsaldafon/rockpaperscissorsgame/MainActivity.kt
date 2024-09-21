@@ -1,5 +1,6 @@
 package ru.clonsaldafon.rockpaperscissorsgame
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
@@ -21,5 +22,26 @@ class MainActivity : AppCompatActivity() {
         val buttonRock = findViewById<Button>(R.id.button_rock)
         val buttonScissors = findViewById<Button>(R.id.button_scissors)
         val buttonPaper = findViewById<Button>(R.id.button_paper)
+
+        buttonRock.setOnClickListener {
+            play(getString(R.string.rock_text))
+        }
+
+        buttonScissors.setOnClickListener {
+            play(getString(R.string.scissors_text))
+        }
+
+        buttonPaper.setOnClickListener {
+            play(getString(R.string.paper_text))
+        }
+    }
+
+    private fun play(value: String) {
+        val intent = Intent(this, ResultActivity::class.java).apply {
+            val bundle = Bundle()
+            bundle.putString(ResultActivity.KEY, value)
+            putExtras(bundle)
+        }
+        startActivity(intent)
     }
 }
