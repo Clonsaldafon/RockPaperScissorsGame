@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name" translatable="false">RockPaperScissorsGame</string>
-    <string name="rock_text">Rock</string>
-    <string name="scissors_text">Scissors</string>
-    <string name="paper_text">Paper</string>
+    <string name="rock_text">rock</string>
+    <string name="scissors_text">scissors</string>
+    <string name="paper_text">paper</string>
     <string name="you">You:</string>
     <string name="computer">PC:</string>
     <string name="you_win">You\'re winner!</string>
