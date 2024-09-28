@@ -6,6 +6,12 @@ import ru.clonsaldafon.rockpaperscissorsgame.model.GameResult
 
 object GameManager {
 
+    fun computerChoose(): GameChoice = listOf(
+        GameChoice.ROCK,
+        GameChoice.SCISSORS,
+        GameChoice.PAPER
+    ).random()
+
     fun checkWinner(user: String, computer: String, context: Context): GameResult =
         when {
             user == computer -> GameResult.DRAW

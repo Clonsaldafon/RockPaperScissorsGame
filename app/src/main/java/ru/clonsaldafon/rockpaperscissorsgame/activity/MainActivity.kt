@@ -10,6 +10,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import ru.clonsaldafon.rockpaperscissorsgame.R
 import ru.clonsaldafon.rockpaperscissorsgame.model.GameChoice
+import ru.clonsaldafon.rockpaperscissorsgame.utils.GameManager
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,14 +43,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun play(userChoice: GameChoice) {
-        startResultActivity(userChoice, computerChoose(), this)
+        startResultActivity(userChoice, GameManager.computerChoose(), this)
     }
-
-    private fun computerChoose(): GameChoice = listOf(
-            GameChoice.ROCK,
-            GameChoice.SCISSORS,
-            GameChoice.PAPER
-        ).random()
 
     private fun startResultActivity(user: GameChoice, computer: GameChoice, context: Context) {
         startActivity(Intent(this, ResultActivity::class.java).apply {
