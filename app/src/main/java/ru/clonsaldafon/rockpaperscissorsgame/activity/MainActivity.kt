@@ -36,14 +36,10 @@ class MainActivity : AppCompatActivity() {
         setButtonClick(R.id.button_paper, GameChoice.PAPER)
     }
 
-    private fun setButtonClick(buttonId: Int, choice: GameChoice) {
+    private fun setButtonClick(buttonId: Int, userChoice: GameChoice) {
         findViewById<Button>(buttonId).setOnClickListener {
-            play(choice)
+            startResultActivity(userChoice, GameManager.computerChoose(), this)
         }
-    }
-
-    private fun play(userChoice: GameChoice) {
-        startResultActivity(userChoice, GameManager.computerChoose(), this)
     }
 
     private fun startResultActivity(user: GameChoice, computer: GameChoice, context: Context) {
