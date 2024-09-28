@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RockPaperScissorsGame</string>
+    <string name="rock_text">камень</string>
+    <string name="scissors_text">ножницы</string>
+    <string name="paper_text">бумага</string>
+    <string name="you">Вы:</string>
+    <string name="computer">ПК:</string>
+    <string name="you_win">Вы выиграли!</string>
+    <string name="computer_win">ПК победил!</string>
+    <string name="draw">Ничья!</string>
+    <string name="back">Назад</string>
+</resources>
